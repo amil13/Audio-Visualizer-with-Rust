@@ -1,0 +1,9 @@
+[package]
+name = "audio_visualizer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cpal = "0.15.3"  # Updated to the latest version
+minifb = "0.24"   # Version is up to date
+ringbuf = "0.4.7" # Version is up to date
