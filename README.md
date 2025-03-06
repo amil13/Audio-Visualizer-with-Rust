@@ -4,7 +4,7 @@
 
 ## Introduction
 
-The **Audio Visualizer Project** creates a very simple and basic real-time visual representations of audio input using **cpal** and **minifb**. This project transforms audio into dynamic visual patterns using:
+The **Audio Visualizer Project** creates a very simple and basic real-time visual representations of audio input using **cpal** and **minifb** crates. This project transforms audio into dynamic visual patterns using:
 
 - **cpal**: Handles real-time audio input from the default audio device
 - **minifb**: Manages window creation and rendering of the visualization
