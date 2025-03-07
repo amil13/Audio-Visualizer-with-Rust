@@ -39,9 +39,8 @@ impl AudioCapture {
         let device = host.default_input_device().expect("No input device"); // Get default input with error handling
 
         let config = device.default_input_config().unwrap().config(); // Get default config for device
-
         // Callback to feed producer end of ring buffer
-        let feedProducerCallback = move |data: &[f32], _: &_| {
+        let feed_producer_callback = move |data: &[f32], _: &_| {
             let mut producer = producer.lock().unwrap();
             for &sample in data {
                 let _ = producer.try_push(sample); // Push each sample to ring buffer
@@ -52,7 +51,7 @@ impl AudioCapture {
         let stream = device
             .build_input_stream(
                 &config,
-                feedProducerCallback, // Callback
+                feed_producer_callback, // Callback
                 |err| eprintln!("Audio stream error: {}", err), // Error callback
                 None,
             )

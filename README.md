@@ -10,7 +10,7 @@ The **Audio Visualizer Project** creates a very simple and basic real-time visua
 - **minifb**: Manages window creation and rendering of the visualization
 
 This visualizer creates a basic visual display synchronized with audio input, displaying a waveform in real-time. It demonstrates the integration of **Rust**, **Audio Processing**, and **Real-Time Visualization** to build an interactive audio visualization tool.
- *Additionally, it serves as a demonstration of my skills and exposure to rust.*
+ *Additionally, it serves as a demonstration of my skills and exposure to rust and its applications.*
 
 ## Demo
 
